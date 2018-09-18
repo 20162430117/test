@@ -1,0 +1,21 @@
+1.select Name from Products
+2.select Name ,price from products
+3.select name from productswhere price<=200 
+4.select *from products where price>=60 and price<=120
+5.select name,price *100 from products
+6.select avg(price) from products
+7.select avg(price) from products where manafactuturer=2
+8.select count(*) from products where price>=180 
+9.select name,price from products where price>=180  order by price desc, name00000
+10.select * from products manufactureres where products.manufacturer=manufactureres.code
+11.select product.name ,price,manufactureres.name from product,manafacturers where products.manufacturer=manufactureres.code
+12.select avg(price), manufacturer from products group by manufacturer0000 
+13.select avg(price), manufactureres.name from product,manafacturers group by manufactureres.name
+14.select avg(price) manufacturers.name from products manufacturers  where products.manufacturer=manufactureres.code group by manufacturers.name having avg(price)>=150
+15.select name,price from products order by price asc limit 1 
+15.select name,price from products where price = (select min(price) from products)0000
+16.select A.name,A.price.F.name from manufacturers F,products A where A.price = (select max(price) from products A where A.manufacturer=F.code) 
+17.insert into products values (11.¡®Loudspeakers¡¯, $70, 2)
+18.update products set name = Laser Printer where code = 8;
+19.update products set price = price -(price*0.1)
+20.update products set price = price -(price*0.1) where price>=120
